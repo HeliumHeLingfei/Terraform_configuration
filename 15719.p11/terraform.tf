@@ -17,4 +17,8 @@ terraform {
     }
   }
   required_version = ">= 1.5.0" # Required Terraform version to use
+  provider "aws" {
+  region = var.aws_region
+  #profile = "default"
+  }
 }
